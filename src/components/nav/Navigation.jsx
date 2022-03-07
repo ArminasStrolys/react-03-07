@@ -11,7 +11,7 @@ class Navigation extends React.Component {
             <Link className="nav-link" to="/">Pradinis</Link>
         </li>
         <li className="nav-item">
-            <Link className="nav-link" to="/">Išsaugoti</Link>
+            <Link className="nav-link" to="/saved">Išsaugoti</Link>
         </li>
       </ul>
     </nav>

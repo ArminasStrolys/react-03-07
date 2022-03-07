@@ -2,6 +2,7 @@ import React from "react";
 import Joke from "../joke/Joke";
 
 class Jokes extends React.Component {
+
   constructor() {
     super();
     this.state = {
@@ -26,9 +27,9 @@ class Jokes extends React.Component {
           <div className="row">
               {this.state.jokes.map((joke)=>(
               <Joke
-              key={joke.id}
-              id={joke.id}
-              joke={joke.joke}
+                key={joke.id}
+                id={joke.id}
+                joke={joke.joke}
               />
               ))}
           </div>
