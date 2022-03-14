@@ -16,18 +16,6 @@ class Joke extends React.Component {
           localStorage.setItem('favouriteJokes', JSON.stringify(favouritesList))
       }
   render() {
-    // if (this.handleAddFavourites ){
-
-  //   return (
-  //     <>
-  //       <div className="card col-sm-3 align-items-center align-self-end">
-  //         <h5 className="card-title">{this.props.id}</h5>
-  //         <p className="card-text">{this.props.joke}</p>
-  //         <p>Juokelis išsaugotas</p>
-  //       </div>
-  //     </>
-  //   );
-  // }
     
     return (
       <>
@@ -35,7 +23,6 @@ class Joke extends React.Component {
           <h5 className="card-title">{this.props.id}</h5>
           <p className="card-text">{this.props.joke}</p>
           <button className="btn btn-primary" onClick={this.handleAddFavourites}>Saugoti</button>
-          {/* <p>Juokelis išsaugotas</p> */}
         </div>
       </>
     );
@@ -43,6 +30,3 @@ class Joke extends React.Component {
 }
 
 export default Joke;
-
-
-// saugoti mygtuko turetu nelikti, o prierasas bus - issaugotas bajeris
